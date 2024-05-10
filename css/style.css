@@ -44,7 +44,7 @@ select {
   width: 150px;
 }
 
-.booking-form {
+.bookingForm {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,27 +55,27 @@ select {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.booking-form h1 {
+.bookingForm h1 {
   color: #333;
   text-align: center;
   margin-bottom: 1em;
 }
 
-.booking-form form {
+.bookingForm form {
   margin-top: 3em;
   display: grid;
   gap: 10px;
 }
 
-.booking-form input,
-.booking-form select {
+.bookingForm input,
+.bookingForm select {
   padding: 10px;
 }
 .marketing1 {
   padding-top: 4em;
 }
 .flightsSection {
-  margin-left: 7em;
+  margin-left: 9em;
   margin-right: 5em;
 }
 .btnCustom1 {
@@ -86,13 +86,22 @@ select {
   display: flex;
   flex-direction: column;
 }
-.checked {
+.btnCustom2 {
+  background-color: #33efa0;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+.row {
+  margin-top: 2em;
+}
+/* .checked {
   color: orange;
 }
 .checked1 {
   color: orange;
   padding-left: 0.5em;
-}
+} */
 .footer {
   width: 100%;
   background-color: #001b03;
@@ -277,4 +286,15 @@ select {
 
 .carPadding {
   padding-left: 4em;
+}
+
+.boxShadow {
+padding-top: 3em;
+padding-bottom: 5em;
+padding-left: 5em;
+padding-right: 5em;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+border-radius: 2em;
+background-color: #ffffff;
+
 }

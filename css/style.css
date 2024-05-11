@@ -1,7 +1,7 @@
 header {
   background: #ffffff;
-  padding: 0px 20px;
   margin: 1.3em;
+  font-size: 1.3em;
 }
 
 .navText {
@@ -11,7 +11,16 @@ header {
 }
 .btnCustom {
   background-color: #33efa0;
-  padding: 0.5em 1.5em;
+  font-size: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.btnCustom4 {
+  background-color: #33efa0;
+  font-size: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .video-container {
   position: relative;
@@ -80,6 +89,7 @@ select {
 }
 .btnCustom1 {
   background-color: #33efa0;
+  font-size: 1.2em;
   padding: 0.5em 2.5em;
   margin-top: 1em;
   text-align: center;
@@ -190,9 +200,19 @@ select {
 .tripGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 4rem 0;
+  gap: 20px;
+  padding: 20px;
 }
+
+@media (width < 1000px) {
+  .tripGrid {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Switch to a single column on small screens */
+  }
+}
+
 .hotelM {
   padding: 2em 2em 2em 2em;
   background-color: #f7fffccc;
@@ -212,7 +232,7 @@ select {
 .tripDetails {
   padding: 1rem;
   display: grid;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: var(--text-same);
   background-color: var(--extra-light);
@@ -226,7 +246,7 @@ select {
 .tripDetails1 {
   display: grid;
   gap: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
   color: var(--text-same);
   background-color: var(--extra-light);
@@ -289,12 +309,11 @@ select {
 }
 
 .boxShadow {
-padding-top: 3em;
-padding-bottom: 5em;
-padding-left: 5em;
-padding-right: 5em;
-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
-border-radius: 2em;
-background-color: #ffffff;
-
+  padding-top: 3em;
+  padding-bottom: 5em;
+  padding-left: 5em;
+  padding-right: 5em;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 2em;
+  background-color: #ffffff;
 }

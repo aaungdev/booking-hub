@@ -226,6 +226,7 @@ select {
   padding: 2em 2em 2em 2em;
   background-color: #f7fffccc;
   box-shadow: #003921;
+  border: 3px rgb(0, 80, 37);
 }
 .tripCard {
   border-radius: 1rem;
@@ -301,7 +302,7 @@ select {
 }
 
 .homeShowcase {
-  width: fit-content;
+  width: 500px;
   border-radius: 2em;
   overflow: -moz-hidden-unscrollable;
   box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.1);
@@ -312,6 +313,7 @@ select {
   transform: scale(1.1);
   cursor: pointer;
 }
+
 
 .carPadding {
   padding-left: 4em;

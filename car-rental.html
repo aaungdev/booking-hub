@@ -26,12 +26,12 @@
       </div>
       <ul class="nav col-12 col-md-auto mb-3 justify-content-center mb-md-0">
         <li>
-          <a href="index.html" class="nav-link px-3 link-secondary navText"
-            ><b>Home</b></a
-          >
+          <a href="index.html" class="nav-link px-3 navText"><b>Home</b></a>
         </li>
         <li><a href="hotel.html" class="nav-link px-3 navText">Hotel</a></li>
-        <li><a href="car-rental.html" class="nav-link px-3 navText">Car Rental</a></li>
+        <li>
+          <a href="car-rental.html" class="nav-link px-3 navText">Car Rental</a>
+        </li>
         <li><a href="#" class="nav-link px-3 navText">Flights</a></li>
         <li><a href="#" class="nav-link px-3 navText">Cruises</a></li>
         <li><a href="#" class="nav-link px-3 navText">Tours</a></li>
@@ -44,7 +44,7 @@
       </div>
     </header>
     <main class="carRentalBg">
-    <section class="hotelM1">
+      <section class="hotelM1">
         <div class="container boxShadow">
           <h1 class="text-center mb-5">Complete Your Car Rental Booking</h1>
           <form id="rentalForm" class="container">
@@ -59,30 +59,66 @@
             <div class="mb-3">
               <label>Options:</label>
               <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="tollTag" value="3.95" />
-                <label for="tollTag" class="form-check-label">Electronic Toll Tag ($3.95/day)</label>
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="tollTag"
+                  value="3.95"
+                />
+                <label for="tollTag" class="form-check-label"
+                  >Electronic Toll Tag ($3.95/day)</label
+                >
               </div>
               <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="gps" value="2.95" />
-                <label for="gps" class="form-check-label">GPS ($2.95/day)</label>
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="gps"
+                  value="2.95"
+                />
+                <label for="gps" class="form-check-label"
+                  >GPS ($2.95/day)</label
+                >
               </div>
               <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="roadsideAssistance" value="2.95" />
-                <label for="roadsideAssistance" class="form-check-label">Roadside Assistance ($2.95/day)</label>
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="roadsideAssistance"
+                  value="2.95"
+                />
+                <label for="roadsideAssistance" class="form-check-label"
+                  >Roadside Assistance ($2.95/day)</label
+                >
               </div>
             </div>
             <div class="mb-3">
               <label>Under 25:</label>
               <div class="form-check">
-                <input type="radio" class="form-check-input" name="under25" id="under25No" value="no" checked />
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="under25"
+                  id="under25No"
+                  value="no"
+                  checked
+                />
                 <label for="under25No" class="form-check-label">No</label>
               </div>
               <div class="form-check">
-                <input type="radio" class="form-check-input" name="under25" id="under25Yes" value="yes" />
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="under25"
+                  id="under25Yes"
+                  value="yes"
+                />
                 <label for="under25Yes" class="form-check-label">Yes</label>
               </div>
             </div>
-            <button type="button" id="calculateCost" class="btn btnCustom5">Estimate Total Cost</button>
+            <button type="button" id="calculateCost" class="btn btnCustom5">
+              Estimate Total Cost
+            </button>
           </form>
           <table class="table mt-4" id="results">
             <tr>
@@ -103,45 +139,53 @@
             </tr>
           </table>
         </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footerContainer">
-          <div class="footerCol">
-            <h3 class="footerTitle">Our Services</h3>
-            <p class="footerText">
-              Comprehensive booking options (hotels, flights, car rentals, and
-              tours). Tailored experiences for all types of travelers.
-            </p>
-          </div>
-          <div class="footerCol">
-            <h3 class="footerTitle">Why Choose Us</h3>
-            <p class="footerText">
-              Best price guarantee. <br />
-              User-friendly platform. <br />
-              24/7 customer support. <br />
-              Exclusive deals and offers.
-            </p>
-          </div>
-          <div class="footerCol">
-            <h4>Reach Out To Us</h4>
-            <p><span>Email:</span> bookinghub@mail.com</p>
-            <p><span>Phone:</span> +1 0000 00 000</p>
-          </div>
-          <div class="footerCol">
-            <h4>Address</h4>
-            <div class="mapOuter">
-              <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5879.092213333417!2d-73.98812288866775!3d40.75797873468062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e1!3m2!1sen!2sus!4v1715399397093!5m2!1sen!2sus" width="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>         </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footerContainer">
+        <div class="footerCol">
+          <h3 class="footerTitle">Our Services</h3>
+          <p class="footerText">
+            Comprehensive booking options (hotels, flights, car rentals, and
+            tours). Tailored experiences for all types of travelers.
+          </p>
+        </div>
+        <div class="footerCol">
+          <h3 class="footerTitle">Why Choose Us</h3>
+          <p class="footerText">
+            Best price guarantee. <br />
+            User-friendly platform. <br />
+            24/7 customer support. <br />
+            Exclusive deals and offers.
+          </p>
+        </div>
+        <div class="footerCol">
+          <h4>Reach Out To Us</h4>
+          <p><span>Email:</span> bookinghub@mail.com</p>
+          <p><span>Phone:</span> +1 0000 00 000</p>
+        </div>
+        <div class="footerCol">
+          <h4>Address</h4>
+          <div class="mapOuter">
+            <div class="google-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5879.092213333417!2d-73.98812288866775!3d40.75797873468062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e1!3m2!1sen!2sus!4v1715399397093!5m2!1sen!2sus"
+                width="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
-        <div class="footerBar">
-          <a href="#" class="footerLink">FAQs</a>
-          <a href="#" class="footerLink">Terms & Conditions</a>
-          <a href="#" class="footerLink">Privacy Policy</a>
-          Copyright © 2023 one-stop book hub. All rights reserved.
-        </div>
-      </footer>
-    </body>
-  </html>
+      </div>
+      <div class="footerBar">
+        <a href="#" class="footerLink">FAQs</a>
+        <a href="#" class="footerLink">Terms & Conditions</a>
+        <a href="#" class="footerLink">Privacy Policy</a>
+        Copyright © 2023 one-stop book hub. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

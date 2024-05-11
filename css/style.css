@@ -64,7 +64,7 @@ select {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.bookingForm h1 {
+.bookingForm h2 {
   color: #333;
   text-align: center;
   margin-bottom: 1em;
@@ -105,8 +105,8 @@ select {
 .btnCustom5 {
   background-color: #33efa0;
   text-align: center;
-  padding-right: 8em;
-  padding-left: 8em;
+  padding-right: 4em;
+  padding-left: 4em;
   font-size: 1.5em;
 }
 .row {
@@ -222,16 +222,16 @@ select {
 }
 .hotelM1 {
   max-width: fit-content;
-  font-size: 1.2em;
+  font-size: 0.9em;
   display: flex;
   justify-content: center; /* Horizontally center the content */
   align-items: center; /* Vertically center the content (if needed) */
-  height: 100vh;
   width: 80%; /* or any specific width */
   margin: 0 auto;
+  padding: 3em;
 }
 .hotelM {
-  padding: 2em 2em 2em 2em;
+  padding: 3em;
   background-color: #f7fffccc;
   box-shadow: #003921;
   border: 3px rgb(0, 80, 37);

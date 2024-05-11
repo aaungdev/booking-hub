@@ -43,79 +43,68 @@
         >
       </div>
     </header>
-    <main class="hotelM">
+    <main class="carRentalBg">
+    <section class="hotelM1">
         <div class="container boxShadow">
-            <h1 class="text-center mb-5">Complete Your Car Rental Booking</h1>
-            <form id="rentalForm">
-                <div class="card shadow-sm mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Rental Details</h5>
-                        <div class="mb-3">
-                            <label for="pickupDate" class="form-label">Pickup Date</label>
-                            <input type="date" id="pickupDate" class="form-control" required />
-                        </div>
-                        <div class="mb-3">
-                            <label for="numDays" class="form-label">Number of Days</label>
-                            <input type="number" id="numDays" class="form-control" required />
-                        </div>
-                        <fieldset class="mb-3">
-                            <legend>Options</legend>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="tollTag" value="3.95" />
-                                <label for="tollTag" class="form-check-label">Electronic Toll Tag ($3.95/day)</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="gps" value="2.95" />
-                                <label for="gps" class="form-check-label">GPS ($2.95/day)</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="roadsideAssistance" value="2.95" />
-                                <label for="roadsideAssistance" class="form-check-label">Roadside Assistance ($2.95/day)</label>
-                            </div>
-                        </fieldset>
-                        <fieldset class="mb-3">
-                            <legend>Under 25:</legend>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" name="under25" id="under25No" value="no" checked />
-                                <label for="under25No" class="form-check-label">No</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" name="under25" id="under25Yes" value="yes" />
-                                <label for="under25Yes" class="form-check-label">Yes</label>
-                            </div>
-                        </fieldset>
-                        <button type="button" id="calculateCost" class="btn btnCustom2">Estimate Total Cost</button>
-                    </div>
-                </div>
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Cost Summary</h5>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>Car rental:</td>
-                                    <td><span id="carRentalCost"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Options:</td>
-                                    <td><span id="optionsCost"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Under 25 surcharge:</td>
-                                    <td><span id="under25Surcharge"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Total due:</td>
-                                    <td><span id="totalCost"></span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </form>
+          <h1 class="text-center mb-5">Complete Your Car Rental Booking</h1>
+          <form id="rentalForm" class="container">
+            <div class="mb-3">
+              <label for="pickupDate" class="form-label">Pickup Date:</label>
+              <input type="date" class="form-control" id="pickupDate" />
+            </div>
+            <div class="mb-3">
+              <label for="numDays" class="form-label">Number of Days:</label>
+              <input type="number" class="form-control" id="numDays" />
+            </div>
+            <div class="mb-3">
+              <label>Options:</label>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="tollTag" value="3.95" />
+                <label for="tollTag" class="form-check-label">Electronic Toll Tag ($3.95/day)</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="gps" value="2.95" />
+                <label for="gps" class="form-check-label">GPS ($2.95/day)</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="roadsideAssistance" value="2.95" />
+                <label for="roadsideAssistance" class="form-check-label">Roadside Assistance ($2.95/day)</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label>Under 25:</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="under25" id="under25No" value="no" checked />
+                <label for="under25No" class="form-check-label">No</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="under25" id="under25Yes" value="yes" />
+                <label for="under25Yes" class="form-check-label">Yes</label>
+              </div>
+            </div>
+            <button type="button" id="calculateCost" class="btn btnCustom5">Estimate Total Cost</button>
+          </form>
+          <table class="table mt-4" id="results">
+            <tr>
+              <td>Car rental:</td>
+              <td><span id="carRentalCost"></span></td>
+            </tr>
+            <tr>
+              <td>Options:</td>
+              <td><span id="optionsCost"></span></td>
+            </tr>
+            <tr>
+              <td>Under 25 surcharge:</td>
+              <td><span id="under25Surcharge"></span></td>
+            </tr>
+            <tr>
+              <td>Total due:</td>
+              <td><span id="totalCost"></span></td>
+            </tr>
+          </table>
         </div>
-    </main>
-    
+        </section>
+      </main>
     <footer class="footer">
       <div class="footerContainer">
         <div class="footerCol">

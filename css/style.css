@@ -187,12 +187,6 @@ select {
   font-size: 1rem;
 }
 
-/* .gmapCanvas {
-  overflow: hidden;
-  height: 8em;
-  width: 10em;
-} */
-
 .trip {
   background-color: var(--secondary-color);
   max-width: var(--max-width);
